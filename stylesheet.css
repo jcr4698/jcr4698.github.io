@@ -1,4 +1,65 @@
+/* General Structural Format */
+
+body { /* 1. Use a CSS selector to apply style(s) to at least one HTML tag. (0.2) */
+    background-color: #111111;
+}
+
+p { /* 7. Change at least two box model properties of any tag, class or id. (0.2) */
+    margin-left: 26px;
+}
+
+a {
+    color: #db4c4c;
+    font-weight: bold;
+}
+
+a:hover { /* 6. Use a CSS selector to change the color of <a> when you hover over it. (0.2)*/
+    color: #ffffff;
+    font-weight: bold;
+}
+
+img {
+    margin-left: 26px;
+    width: 128px;
+    height: 128px;
+}
+
+/* Single Element Format */
+
+#italics { /* 3. Create at least one id, apply it to an element, and style it. (0.2)*/
+    font-style: italic;
+    filter: brightness(60%)
+}
+
+/* Headings and Sub-headings Format */
+
+.title { /* 7. Change at least two box model properties of any tag, class or id. (0.2) */
+    color: #ffffff;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+}
+
+.subheading { /* 2. Create at least one class, apply it to at least two elements,
+                 and style it. (0.2)*/
+    color: #a0a0a0;
+}
+
+.heading {
+    color: #ffffff;
+}
+
+/* Section Specific Format */
 .projects {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #000000;
+    color: #0ee2e2;
+}
+
+.experience {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #19d137;
+}
+
+.links {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #db4c4c;
 }
