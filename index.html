@@ -4,13 +4,21 @@
  -->
 
 <script>
-	let heroku_size = true;
+	let heroku_show = true;
+	let matterport_show = true;
 
 	function myFunction(id) {
-		if(id === "heroku-app")
-			heroku_size = !heroku_size;
-		document.getElementById(id).width = heroku_size ? 853 : "99%";
-		document.getElementById(id).height = heroku_size ? 480 : "75%";
+		var expanded = false;
+		if(id === "heroku-app") {
+			heroku_show = !heroku_show;
+			expanded = heroku_show;
+		}
+		if(id === "matterport-app") {
+			matterport_show = !matterport_show;
+			expanded = matterport_show;
+		}
+		document.getElementById(id).width = expanded ? 0 : "99%";
+		document.getElementById(id).height = expanded ? 0 : "75%";
 	}
 </script>
 
@@ -105,17 +113,19 @@
 		</p>
 		<p>
 			Vislab Virtual Tour 2022:
-			<br>
-			<br>
-			<iframe
-				width='853'
-				height='480'
-				src='https://my.matterport.com/show/?m=zmeyTA2bEjH'
-				frameborder='0'
-				allowfullscreen
-				allow='xr-spatial-tracking'>
-			</iframe>
 		</p>
+		<button onclick="myFunction('matterport-app')"">expand/shrink</button>
+		<br>
+		<iframe
+			id="matterport-app"
+			style="transition: all .5s linear"
+			width='0'
+			height='0'
+			src='https://my.matterport.com/show/?m=zmeyTA2bEjH'
+			frameborder='0'
+			allowfullscreen
+			allow='xr-spatial-tracking'>
+		</iframe>
 		<p>
 			Description: A 360-degree virtual tour of the Visualizations Lab at The University of Texas at Austin.
 			The virtual tour is used for the Vislab Website in order to provide a preview of the Lab for anybody
@@ -138,13 +148,15 @@
 		<p id="italics">
 			Course: ECE461L (Fall 2022)
 		</p>
-		<a class="link" onclick="myFunction('heroku-app')" style="margin-left: 26px;">Project Hardware Manager (click here to expand/shrink)</a>
-		<br>
+		<p>
+			Project Hardware Manager
+		</p>
+		<button onclick="myFunction('heroku-app')"">expand/shrink</button>
 		<br>
 		<iframe
 			id="heroku-app"
-			width='853'
-			height='480'
+			width='0'
+			height='0'
 			src='https://team-project-ece461l.herokuapp.com/'
 			frameborder='0'
 			allowfullscreen>
