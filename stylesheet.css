@@ -13,7 +13,6 @@ p { /* 7. Change at least two box model properties of any tag, class or id. (0.2
 }
 
 a {
-    color: #db4c4c;
     font-weight: bold;
 }
 
@@ -33,6 +32,16 @@ img {
 #italics { /* 3. Create at least one id, apply it to an element, and style it. (0.2)*/
     font-style: italic;
     filter: brightness(60%)
+}
+
+#heroku-app {
+    margin-left: 20px;
+    transition: all .5s linear
+}
+
+button.link {
+    background: none;
+    border: none;
 }
 
 /* Headings and Sub-headings Format */

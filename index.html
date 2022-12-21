@@ -3,215 +3,249 @@
     UT EID: jcr4698
  -->
 
+<script>
+	let heroku_size = true;
+
+	function myFunction(id) {
+		if(id === "heroku-app")
+			heroku_size = !heroku_size;
+		document.getElementById(id).width = heroku_size ? 853 : "99%";
+		document.getElementById(id).height = heroku_size ? 480 : "75%";
+	}
+</script>
+
 <!DOCTYPE html>
 <html>
-    <!-- Website Setup -->
-    <head>
-        <!-- Meta Info -->
-        <meta charset="utf-8"/>
-        <meta name="author" content="Jan C. Rubio"/>
-        <meta name="description" content="Website listing Jan's experience in the software
-        engnieering track of Electrical and Computer Engineering at the University of Texas at Austin"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="keywords" content="ECE461L, Software Engineering and Design Lab, Samant,
-        HTML, CSS"/>
+<!-- Website Setup -->
 
-        <!-- Website name and style -->
-        <title>Jan's Relevant Coursework</title>
-        <link href="./stylesheet.css" rel="stylesheet">
+<head>
+	<!-- Meta Info -->
+	<meta charset="utf-8" />
+	<meta name="author" content="Jan C. Rubio" />
+	<meta name="description" content="Website listing Jan's experience in the software
+        engnieering track of Electrical and Computer Engineering at the University of Texas at Austin" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="keywords" content="ECE461L, Software Engineering and Design Lab, Samant,
+        HTML, CSS" />
 
-    </head>
+	<!-- Website name and style -->
+	<title>Jan's Relevant Coursework</title>
+	<link href="./stylesheet.css" rel="stylesheet">
 
-    <!-- Website Content -->
-    <body>
-        <!-- Website title -->
-        <div class="title">
-            <h1>Jan's Relevant Coursework</h1>
-        </div>
+</head>
 
-        <!-- Experience -->
-        <div class="experience">
-            <h2 class="heading">Work Experience</h2>
+<!-- Website Content -->
 
-            <!-- Position 1 -->
-            <h3 class="subheading">Undergraduate Research Assistant</h3>
-            <p id="italics">
-                Texas Advanced Computing Center (Aug 2019 - Present)
-            </p>
-            <p>
-                Description: Assist in TACC research projects that enhance the learning
-                experience of the user through visualization. My responsibilities include
-                software research & implementation, management of the systems, and providing
-                tours to any incoming visitors.
-            </p>
+<body>
+	<!-- Website title -->
+	<div class="title">
+		<h1>Jan's Relevant Coursework</h1>
+	</div>
 
-            <!-- Position 2 -->
-            <h3 class="subheading">Technical Counselor</h3>
-            <p id="italics">
-                Code@TACC (June 2021 - Aug 2021)
-            </p>
-            <p>
-                Description: Responsible for helping participants during coding and debugging sessions.
-                I provided engagement, motivation, and support to participants in their technical activities.
-            </p>
+	<!-- Experience -->
+	<div class="experience">
+		<h2 class="heading">Work Experience</h2>
 
-        </div>
+		<!-- Position 1 -->
+		<h3 class="subheading">Undergraduate Research Assistant</h3>
+		<p id="italics">
+			Texas Advanced Computing Center (Aug 2019 - Present)
+		</p>
+		<p>
+			Description: Assist in TACC research projects that enhance the learning
+			experience of the user through visualization. My responsibilities include
+			software research & implementation, management of the systems, and providing
+			tours to any incoming visitors.
+		</p>
 
-        <br>
+		<!-- Position 2 -->
+		<h3 class="subheading">Technical Counselor</h3>
+		<p id="italics">
+			Code@TACC (June 2021 - Aug 2021)
+		</p>
+		<p>
+			Description: Responsible for helping participants during coding and debugging sessions.
+			I provided engagement, motivation, and support to participants in their technical activities.
+		</p>
 
-        <!-- Work Projects -->
-        <div class="projects">
-            <h2 class="heading">Work Projects</h2>
+	</div>
 
-            <!-- Project 1 -->
-            <h3 class="subheading">Stallion File Finder</h3>
-            <p id="italics">
-                Position: Undergraduate Research Assistant
-            </p>
-            <p>
-                Description: The objective of this project is to aid in the organization/navigation of
-                visualization files used by the DisplayCluster software. The program provides an organizing
-                convention, which uses the "Gallery_Content.txt" file to keep track of the symbolic names.
-                The terminal commands ("./add_singl", "./add_mult", "./search") use this file to add to
-                or search from the Gallery. In addition, for users not comfortable with the terminal, the
-                program provides a graphical user interface for both adding ("./adder") and searching
-                ("./finder").
-            </p>
-            <p>
-                Stallion File Finder link <a href="https://github.com/jcr4698/Stallion_File_Finder">here</a>
-            </p>
-            <p>
-                Materials: VS Code, C, Gtk3, and Ubuntu commands
-            </p>
+	<br>
 
-            <!-- Project 2 -->
-            <h3 class="subheading">Visualizations Lab Virtual Tour</h3>
-            <p id="italics">
-                Position: Undergraduate Research Assistant
-            </p>
-            <p>
-                Vislab Virtual Tour 2022:
-                <br>
-                <br>
-                <iframe width='853' height='480' src='https://my.matterport.com/show/?m=zmeyTA2bEjH' frameborder='0' allowfullscreen allow='xr-spatial-tracking'></iframe>
-            </p>
-            <p>
-                Description: A 360-degree virtual tour of the Visualizations Lab at The University of Texas at Austin.
-                The virtual tour is used for the Vislab Website in order to provide a preview of the Lab for anybody
-                interested in visiting the premises.
-            </p>
-            <p>
-                Materials: Matterport and Ricoh Theta V Camera
-            </p>
+	<!-- Work Projects -->
+	<div class="projects">
 
-        </div>
+		<h2 class="heading">Work Projects</h2>
 
-        <br>
+		<!-- Project 1 -->
+		<h3 class="subheading">Stallion File Finder</h3>
+		<p id="italics">
+			Position: Undergraduate Research Assistant
+		</p>
+		<p>
+			Project Hardware Manager
+		</p>
+		<p>
+			Description: The objective of this project is to aid in the organization/navigation of
+			visualization files used by the DisplayCluster software. The program provides an organizing
+			convention, which uses the "Gallery_Content.txt" file to keep track of the symbolic names.
+			The terminal commands ("./add_singl", "./add_mult", "./search") use this file to add to
+			or search from the Gallery. In addition, for users not comfortable with the terminal, the
+			program provides a graphical user interface for both adding ("./adder") and searching
+			("./finder").
+		</p>
+		<p>
+			Materials: VS Code, C, Gtk3, and Ubuntu commands
+		</p>
 
-        <!-- Projects -->
-        <div class="projects">
-            <h2 class="heading">Software Projects</h2>
+		<!-- Project 2 -->
+		<h3 class="subheading">Visualizations Lab Virtual Tour</h3>
+		<p id="italics">
+			Position: Undergraduate Research Assistant
+		</p>
+		<p>
+			Vislab Virtual Tour 2022:
+			<br>
+			<br>
+			<iframe
+				width='853'
+				height='480'
+				src='https://my.matterport.com/show/?m=zmeyTA2bEjH'
+				frameborder='0'
+				allowfullscreen
+				allow='xr-spatial-tracking'>
+			</iframe>
+		</p>
+		<p>
+			Description: A 360-degree virtual tour of the Visualizations Lab at The University of Texas at Austin.
+			The virtual tour is used for the Vislab Website in order to provide a preview of the Lab for anybody
+			interested in visiting the premises.
+		</p>
+		<p>
+			Materials: Matterport and Ricoh Theta V Camera
+		</p>
 
-            <!-- Project 9 -->
-            <h3 class="subheading">Project Hardware Manager</h3>
-            <p id="italics">
-                Course: ECE461L (Fall 2022)
-            </p>
-            <p>
-                Description: This web application allows users to login, or register, to be able to
-                access their projects. Once logged in, users have the option to create their own projects
-                or join projects made by other users. Users with access to a project can check-in from
-                the 2 hardware sets available for that project.
-            </p>
-            <p>
-                Materials: Pycharm, Python, Flask, ReactJS, HTML, CSS, Heroku, and MongoDB
-            </p>
+	</div>
 
-            <!-- Project 8 -->
-            <h3 class="subheading">Inline Testing (Engineering Design Project)</h3>
-            <p id="italics">
-                Course: ECE364D (Spring 2022)
-            </p>
-            <p>
-                Description: Inline Testing adds another level of granularity to software testing
-                methods such as end-to-end, integration, and unit testing. The motivation behind
-                this project is to advance the study of Inline Testing and the I-Test framework.
-                My team's goals consist of writing 100 program statements and develop a machine
-                learning model that determines whether a given line is worthy of such test.
+	<br>
 
-            </p>
-            <p>
-                Materials: VS Code, Python, I-Test framework, Travis Continuous Integration, and Pylint
-            </p>
+	<!-- Projects -->
+	<div class="projects">
+		<h2 class="heading">Software Projects</h2>
 
-            <!-- Project 5 -->
-            <h3 class="subheading">Bidding Server-Client Network</h3>
-            <p id="italics">
-                Course: EE422C (Spring 2021)
-            </p>
-            <p>
-                Description: This project demonstrates a server-client architecture.
-                The goal is to design and implement an online auction server and client
-                backend. All communication between the server and clients will occur
-                through sockets, therefore the program will work even if clients are not
-                run on same machine.
-            </p>
-            <p>
-                Materials: Eclipse, Java, JavaFX, and socket programming library.
-            </p>
+		<!-- Project 9 -->
+		<h3 class="subheading">Project Hardware Manager</h3>
+		<p id="italics">
+			Course: ECE461L (Fall 2022)
+		</p>
+		<a class="link" onclick="myFunction('heroku-app')" style="margin-left: 26px;">Project Hardware Manager (click here to expand/shrink)</a>
+		<br>
+		<br>
+		<iframe
+			id="heroku-app"
+			width='853'
+			height='480'
+			src='https://team-project-ece461l.herokuapp.com/'
+			frameborder='0'
+			allowfullscreen>
+		</iframe>
+		<p>
+			Description: This web application allows users to login, or register, to be able to
+			access their projects. Once logged in, users have the option to create their own projects
+			or join projects made by other users. Users with access to a project can check-in from
+			the 2 hardware sets available for that project.
+		</p>
+		<p>
+			Materials: Pycharm, Python, Flask, ReactJS, HTML, CSS, Heroku, and MongoDB
+		</p>
 
-            <!-- Project 7 -->
-            <h3 class="subheading">pintOS</h3>
-            <p id="italics">
-                Course: EE461S (Spring 2022)
-            </p>
-            <p>
-                Description: This project is a simple operating system kernel called pintOS.
-                The goal is to implement a number of system calls, including a file system,
-                and a user program that uses the system calls.
-            </p>
-            <p>
-                Materials: Vs Code, Ubuntu Virtual Machine, C, and pintOS starter code.
-            </p>
+		<!-- Project 8 -->
+		<h3 class="subheading">Inline Testing (Engineering Design Project)</h3>
+		<p id="italics">
+			Course: ECE364D (Spring 2022)
+		</p>
+		<p>
+			Description: Inline Testing adds another level of granularity to software testing
+			methods such as end-to-end, integration, and unit testing. The motivation behind
+			this project is to advance the study of Inline Testing and the I-Test framework.
+			My team's goals consist of writing 100 program statements and develop a machine
+			learning model that determines whether a given line is worthy of such test.
 
-        </div>
+		</p>
+		<p>
+			Materials: VS Code, Python, I-Test framework, Travis Continuous Integration, and Pylint
+		</p>
 
-        <br>
+		<!-- Project 5 -->
+		<h3 class="subheading">Bidding Server-Client Network</h3>
+		<p id="italics">
+			Course: EE422C (Spring 2021)
+		</p>
+		<p>
+			Description: This project demonstrates a server-client architecture.
+			The goal is to design and implement an online auction server and client
+			backend. All communication between the server and clients will occur
+			through sockets, therefore the program will work even if clients are not
+			run on same machine.
+		</p>
+		<p>
+			Materials: Eclipse, Java, JavaFX, and socket programming library.
+		</p>
 
-        <!-- Personal Links -->
-        <div class="links">
-            <h2 class="heading">Links</h2>
-            
-            <!-- Link 1 -->
-            <h3 class="subheading">Professional Profile</h3>
-            <img src="https://media.licdn.com/dms/image/C5603AQHt3dMs8r3S7g/profile-displayphoto-shrink_800_800/0/1619907830504?e=1677110400&v=beta&t=Q3-vePjOfVAntrnY8CFSRQRCrdUelvdI012-m8UIUak">
-            <p>
-                In my LinkedIn profile, I display my professional experience to employers. It includes
-                my education, organizations, and professsional experience. You can find more information
-                about me <a href="https://www.linkedin.com/in/jan-carlos-rubio-sanchez/">here</a>.
-            </p>
-            
-            <!-- Link 2 -->
-            <h3 class="subheading">Project Repository</h3>
-            <img src="https://avatars.githubusercontent.com/u/61097870?s=400&v=4">
-            <p>
-                In my Github, I demonstrate the span of my knowledge and skills. It includes
-                the variety of programming languages I have worked with, the concepts I have implemented,
-                and documentation of my work. You can find the repository <a href="https://github.com/jcr4698?tab=repositories">here</a>.
-            </p>
+		<!-- Project 7 -->
+		<h3 class="subheading">pintOS</h3>
+		<p id="italics">
+			Course: EE461S (Spring 2022)
+		</p>
+		<p>
+			Description: This project is a simple operating system kernel called pintOS.
+			The goal is to implement a number of system calls, including a file system,
+			and a user program that uses the system calls.
+		</p>
+		<p>
+			Materials: Vs Code, Ubuntu Virtual Machine, C, and pintOS starter code.
+		</p>
 
-            <!-- Link 3 -->
-            <h3 class="subheading">Scratch Games</h3>
-            <img src="https://uploads.scratch.mit.edu/get_image/user/17968278_60x60.png">
-            <p>
-                In my Scratch profile, I show the "beginnings" of my programming development. I made
-                these games in 10th grade of high school. They gave me the foundation to programming,
-                creativity, and motivation I needed to purpuse computer engineering. You can find my
-                games <a href="https://scratch.mit.edu/users/JanDaNerd/">here</a>.
-            </p>
+	</div>
 
-        </div>
+	<br>
 
-    </body>
+	<!-- Personal Links -->
+	<div class="links">
+		<h2 class="heading">Links</h2>
+
+		<!-- Link 1 -->
+		<h3 class="subheading">Professional Profile</h3>
+		<img
+			src="https://media.licdn.com/dms/image/C5603AQHt3dMs8r3S7g/profile-displayphoto-shrink_800_800/0/1619907830504?e=1677110400&v=beta&t=Q3-vePjOfVAntrnY8CFSRQRCrdUelvdI012-m8UIUak">
+		<p>
+			In my LinkedIn profile, I display my professional experience to employers. It includes
+			my education, organizations, and professsional experience. You can find more information
+			about me <a href="https://www.linkedin.com/in/jan-carlos-rubio-sanchez/" style="color: #db4c4c;">here</a>.
+		</p>
+
+		<!-- Link 2 -->
+		<h3 class="subheading">Project Repository</h3>
+		<img src="https://avatars.githubusercontent.com/u/61097870?s=400&v=4">
+		<p>
+			In my Github, I demonstrate the span of my knowledge and skills. It includes
+			the variety of programming languages I have worked with, the concepts I have implemented,
+			and documentation of my work. You can find the repository
+			<a href="https://github.com/jcr4698?tab=repositories" style="color: #db4c4c;">here</a>.
+		</p>
+
+		<!-- Link 3 -->
+		<h3 class="subheading">Scratch Games</h3>
+		<img src="https://uploads.scratch.mit.edu/get_image/user/17968278_60x60.png">
+		<p>
+			In my Scratch profile, I show the "beginnings" of my programming development. I made
+			these games in 10th grade of high school. They gave me the foundation to programming,
+			creativity, and motivation I needed to purpuse computer engineering. You can find my
+			games <a href="https://scratch.mit.edu/users/JanDaNerd/" style="color: #db4c4c;">here</a>.
+		</p>
+
+	</div>
+
+</body>
 
 </html>
