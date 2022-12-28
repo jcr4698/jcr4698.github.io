@@ -6,19 +6,24 @@
 <script>
 	let heroku_show = true;
 	let matterport_show = true;
+	let finder_show = true;
 
 	function myFunction(id) {
-		var expanded = false;
 		if(id === "heroku-app") {
 			heroku_show = !heroku_show;
-			expanded = heroku_show;
+			document.getElementById(id).width = heroku_show ? 0 : "99%";
+			document.getElementById(id).height = heroku_show ? 0 : "75%";
 		}
 		if(id === "matterport-app") {
 			matterport_show = !matterport_show;
-			expanded = matterport_show;
+			document.getElementById(id).width = matterport_show ? 0 : "99%";
+			document.getElementById(id).height = matterport_show ? 0 : "75%";
 		}
-		document.getElementById(id).width = expanded ? 0 : "99%";
-		document.getElementById(id).height = expanded ? 0 : "75%";
+		if(id === "finder-app") {
+			finder_show = !finder_show;
+			document.getElementById(id).width = finder_show ? 0 : "100%";
+			document.getElementById(id).height = finder_show ? 0 : "80%";
+		}
 	}
 </script>
 
@@ -91,8 +96,19 @@
 			Position: Undergraduate Research Assistant
 		</p>
 		<p>
-			Project Hardware Manager
+			Project Hardware Manager:
 		</p>
+		<button onclick="myFunction('finder-app')"">expand/shrink</button>
+		<br>
+		<iframe
+			id="finder-app"
+			style="transition: all .5s linear"
+			height="0"
+			width="0"
+			src="File_Finder_Example.png"
+			scrolling="no"
+			frameborder='0'>
+		</iframe>
 		<p>
 			Description: The objective of this project is to aid in the organization/navigation of
 			visualization files used by the DisplayCluster software. The program provides an organizing
