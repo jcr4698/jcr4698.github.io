@@ -1,0 +1,345 @@
+/* General */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0b0e0b;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    /* padding-top: 100px; */
+    padding-top: 0px;
+}
+
+p {
+    margin-bottom: 2rem;
+    line-height: 2;
+    color: #ffffff;
+}
+
+h2 {
+    font-weight: 400;
+    margin: 0% 0% -1% 0%;
+    font-size: 34px;
+    text-transform: uppercase;
+    font-weight: 100;
+    line-height: 2;
+    color: #ffffff;
+}
+
+ul {
+    margin-left: 3%;
+    margin-top: 0%;
+    line-height: 200%;
+}
+
+li {
+    padding: 5px 0px;
+}
+
+section {
+    padding: 20px;
+    margin: 0px 10% 20px 10%; /*0px 150px 20px 150px */
+    width: 80%;
+    background-color: #000000;
+    border: white solid 1px;
+}
+
+body.sticky-header {
+    padding-top: 50%;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Scrolling Bar */
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #83b6b7;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #77a6a7;
+}
+
+/* Section Titles */
+
+.section-header {
+    border: 1px solid #000000;
+    margin: 1rem;
+    height: 5vw;
+    /*padding: 2rem;*/
+}
+
+.section-pointer {
+    display: inline-block;
+    border: 1px solid #000000;
+    vertical-align: middle;
+    width: 4.8%;
+    height: 100%;
+}
+
+.shape-container {
+    position: relative;
+    /* left: -250px; */
+    width: 50%;
+    height: 100%;
+    /*padding-bottom: 5%; /* 3% */
+    float: left;
+    vertical-align: middle;
+}
+
+.pointer {
+    position: relative;
+    left: 0%;
+    left: -2150%;
+    width: 2300%;
+    height: 400%;
+    background: #e55151;
+    clip-path: polygon(0 0, 90% 0, 100% 12.5%, 90% 25%, 0 25%);
+}
+
+.section-title-container {
+    /* children 1 */
+    display: inline-block;
+    border: 1px solid #000000;
+    vertical-align: middle;
+    /* min-width: 200px; */
+    width: 50%;
+    height: 100%;
+}
+
+.section-title {
+    /* padding: 1.7% 0% 0% 0%; */
+    /* padding: -5% 0% 0% 0%; */
+    display: flex;
+    font-weight: 400;
+    /* font-size: 1.8vw; */
+    font-size: 2.7vw;
+    text-transform: uppercase;
+    line-height: 2;
+    color: #ffffff;
+}
+
+/* Header and Tabs */
+
+.header_img {
+    background-color: #0b0e0b;
+    /* border: rgb(255, 255, 255) solid 1px; */
+    /* padding: 30px; */
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#head {
+    /* font-size: 50px; */
+    font-size: 4vw;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.header_tabs {
+    z-index: 99;
+    position: relative;
+    width: 100%;
+    padding: 5px 0px;
+    background-color: #0b0e0b;
+    /* border: 1px solid white; */
+    left: 0%;
+    color: #0ee2e2;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.tab {
+    display: inline-block;
+    /* border-style: dashed; */
+    width: 24%;
+    /* font-size: 2.5vw; */
+}
+
+.tab:hover {
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #00ffdd;
+    /* width: 14%; */
+    color: #000000;
+    border-radius: 6px;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.7;
+}
+
+.sticky+.content {
+    padding-top: 9.5%;
+}
+
+/* About Me and Education */
+
+.side-by-side {
+    display: flex;
+    /* border: 1px solid white; */
+    overflow: hidden;
+    flex-shrink: 0;
+    /* text-align: center; */
+    margin: 0 4% 0 4%;
+    padding: 1% 0;
+}
+
+.me-image {
+    position: relative;
+    display: flex;
+    /* border: 1px solid white; */
+    /* padding: 1% 1%; */
+    /* top: 0%; */
+    width: 30%;
+    height: 90%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.me-text {
+    position: relative;
+    display: flex;
+    /* border: 1px solid white; */
+    color: #ffffff;
+    /* padding: 1% 1%; */
+    top: 0%;
+    bottom: 100%;
+    width: 60%;
+    height: 90%;
+    margin: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-size: 1.5vw; */
+    font-size: 2vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.edu-image {
+    /* margin: 0% 0% 0% 6%; */
+    top: 163%;
+    left: 65%;
+    position: absolute;
+    border-width: 0%;
+    float: right;
+    /* padding: 5px; */
+}
+
+.edu-text {
+    margin: -1% 0% 2% 5%;
+    /* display:flexbox;
+    background-color: #e5a951; */
+    float: left;
+    width: 55%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5vw;/*34px;*/
+}
+
+.coursework-container {
+    position: relative;
+    /* display: flex; */
+    /* border: 1px solid white; */
+    color: #ffffff;
+    /* padding: 1% 1%; */
+    /* top: 0%;
+    bottom: 100%;
+    width: 100%; */
+    height: 90%;
+    margin: 0 4% 0 7.4%;
+    /* padding: 1% 0; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-size: 1.5vw; */
+    font-size: 2vw;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.coursework{
+    margin: 0% 0%;
+    /* line-height: 10%; */
+    font-size: 1.7vw;
+}
+
+.coursework-desc {
+    margin: 0% 0%;
+    font-style: italic;
+    font-size: 1.4vw;
+}
+
+/* Experience */
+
+.resume-header {
+    margin: 0% 6% 0% 6%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 3px;
+    /* font-size: 1.3vw; */
+    font-size: 1.7vw;
+    color: #ffffff;
+}
+
+#resume_employer {
+    float: left;
+}
+
+#resume-dates {
+    float: right;
+}
+
+.exp-info {
+    margin: 0% 0% 0% 6%;
+    font-size: 1.7vw;
+    color: #ffffff;
+}
+
+.graphic-grid {
+    content: "";
+    display: table;
+    clear: both;
+    margin: 0 4% 0 4%;
+    padding: 1% 0;
+    width: 92%;
+    border: 2px solid black;
+    align-content: center;
+}
+
+.graphic {
+    position: relative;
+    float: left;
+    display: flex;
+    /* border: 1px solid black; */
+    left: 7px;
+    max-height: 600px;
+    width: 452px;
+    padding: 1px;
+    /* min-height: 400px; */
+    align-content: center;
+    overflow: hidden;
+}
