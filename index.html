@@ -24,11 +24,11 @@
     
     <div class="header_tabs" id="tabs">
         <h1 id="head">Jan Carlos Rubio Sanchez</h1>
-        <div class="tab" onClick="document.getElementById('me').scrollIntoView();">about me</div>
-        <div class="tab" onClick="document.getElementById('education').scrollIntoView();">education</div>
-        <div class="tab" onClick="document.getElementById('experience').scrollIntoView();">experience</div>
-        <div class="tab" onClick="document.getElementById('projects').scrollIntoView();">projects</div>
-        <!-- <div class="tab" onClick="document.getElementById('media').scrollIntoView();">social media</div> -->
+        <div class="tab" id="head-tab-1" onClick="document.getElementById('me').scrollIntoView();">about me</div>
+        <div class="tab" id="head-tab-2" onClick="document.getElementById('education').scrollIntoView();">education</div>
+        <div class="tab" id="head-tab-3" onClick="document.getElementById('experience').scrollIntoView();">experience</div>
+        <div class="tab" id="head-tab-4" onClick="document.getElementById('projects').scrollIntoView();">projects</div>
+        <div class="tab" id="head-tab-5" onClick="document.getElementById('media').scrollIntoView();">socials</div>
     </div>
 
     <!-- Porfolio Content -->
@@ -51,6 +51,7 @@
             <div class='side-by-side' height="40vw">
                 <div class='me-image'>
                     <img src="Content/IMG_7898.jpg" alt="Jan Cover Photo" style="height: auto; width: 100%;"></img>
+                    <href id="education"></href>
                 </div>
                 <div class='me-text'>
                     <div>
@@ -62,7 +63,6 @@
                             foundation in hardware. I believe that a good program doesn't need fancy parts, but rather
                             efficient code and metal components that work co-dependently to solve a problem effectively.
                         </div>
-                        <href id="education"></href>
                     </div>
                 </div>
             </div>
@@ -140,6 +140,7 @@
                 <br />
 
                 <span class="coursework">Circuit Theory – </span>
+                <href/ id="experience"></href>
                 <i class="coursework-desc">Electric Circuit and Electromagnetic Theory & Computation in MATLAB</i>
                 <br />
 
@@ -150,8 +151,6 @@
                 <span class="coursework">Introduction to Embedded Systems – </span>
                 <i class="coursework-desc">Embedded System Analysis in Assembly and C</i>
                 <br />
-
-                <href/ id="experience"></href>
             </div>
             
         </section>
@@ -364,8 +363,6 @@
                     </ul> 
                 </div>
             </p>
-
-            <href/ id="media"></href>
     
             <!-- Jan's Auction -->
             <p>
@@ -380,6 +377,7 @@
                         <li>
                             Bidding Server that handles simultaneous clients and provides a graphic user interface for ease of use
                         </li>
+                        <href/ id="media"></href>
                         <li>
                             Application of socket programming, JavaFX Interfacing, and multithreading.
                         </li>
@@ -405,29 +403,53 @@
             </div>
 
             <div style="margin-left: 7%;">
-                <!-- Gmail -->
-                <a href="mailto:jcaj750@gmail.com" class="fa fa-google" style="font-size: 8vw"></a>
+                <div class="graphic-grid">
                 
-                <!-- LinkedIn -->
-                <a href="https://www.linkedin.com/in/jan-carlos-rubio-sanchez/" class="fa fa-linkedin" style="font-size: 8vw"></a>
-                
-                <!-- Github -->
-                <a href="https://github.com/jcr4698" class="fa fa-github" style="font-size: 8vw"></a>
-                
-                <!-- Scratch -->
-                <a href="https://scratch.mit.edu/users/JanDaNerd/" class="fa fa-scratch" style="bottom: 0%;">
-                    <img src="https://uploads.scratch.mit.edu/get_image/user/17968278_60x60.png" style="width: 100%;">
-                </a>
-                                
-                <!-- Twitter -->
-                <a href="https://twitter.com/Programmed_Bean/" class="fa fa-twitter" style="font-size: 8vw"></a>
-                
-                <!-- Facebook -->
-                <a href="https://www.facebook.com/alanjan.rubio/" class="fa fa-facebook" style="font-size: 8vw"></a>
-                
-                <!-- Instagram -->
-                <a href="https://www.instagram.com/jancarlosrubiosanchez/" class="fa fa-instagram" style="font-size: 8vw"></a>
+                    <div class="graphic-row">
+                        <!-- Gmail -->
+                        <div class="graphic">
+                            <a href="mailto:jcaj750@gmail.com" target=”_blank” class="fa fa-google" style="font-size: 12vw;"></a>
+                        </div>
+                    
+                        <!-- LinkedIn -->
+                        <div class="graphic">
+                            <a href="https://www.linkedin.com/in/jan-carlos-rubio-sanchez/" target=”_blank” class="fa fa-linkedin" style="font-size: 12vw"></a>
+                        </div>
 
+                        <!-- Github -->
+                        <div class="graphic">
+                            <a href="https://github.com/jcr4698" target=”_blank” class="fa fa-github" style="font-size: 12vw;"></a>
+                        </div>
+                    </div>
+
+                    <div class="graphic-row">
+                        <!-- Scratch -->
+                        <div class="graphic">
+                            <a href="https://scratch.mit.edu/users/JanDaNerd/" target=”_blank” class="fa fa-scratch">
+                                <!-- <img src="https://uploads.scratch.mit.edu/get_image/user/17968278_60x60.png" style="width: 100%;"> -->
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Scratch.logo.S.png" style="width: auto; height: 100%;">
+                            </a>
+                        </div>
+                                        
+                        <!-- Twitter -->
+                        <div class="graphic">
+                            <a href="https://twitter.com/Programmed_Bean/" target=”_blank” class="fa fa-twitter" style="font-size: 12vw"></a>
+                        </div>
+
+                        <!-- Facebook -->
+                        <div class="graphic">
+                            <a href="https://www.facebook.com/alanjan.rubio/" target=”_blank” class="fa fa-facebook" style="font-size: 12vw"></a>
+                        </div>
+                    </div>
+
+                    <div class="graphic-row">
+                        <!-- Instagram -->
+                        <div class="graphic">
+                            <a href="https://www.instagram.com/jancarlosrubiosanchez/" target=”_blank” class="fa fa-instagram" style="font-size: 12vw"></a>
+                        </div>
+                    </div>
+
+                </div>
                 <!-- discord -->
                 <!-- <a href="" class="fab fa-discord"></a> -->
                 <!-- <i class='fab fa-discord' style='font-size:48px; color: white;'></i>
@@ -499,10 +521,20 @@
 
     function myFunction() {
         if (window.pageYOffset > sticky) {
-            document.getElementById("head").style.fontSize = "30px";
+            document.getElementById("head").style.fontSize = "3vw";
+            document.getElementById("head-tab-1").style.fontSize = "2vw";
+            document.getElementById("head-tab-2").style.fontSize = "2vw";
+            document.getElementById("head-tab-3").style.fontSize = "2vw";
+            document.getElementById("head-tab-4").style.fontSize = "2vw";
+            document.getElementById("head-tab-5").style.fontSize = "2vw";
             header.classList.add("sticky");
         } else {
-            document.getElementById("head").style.fontSize = "50px";
+            document.getElementById("head").style.fontSize = "4vw";
+            document.getElementById("head-tab-1").style.fontSize = "3vw";
+            document.getElementById("head-tab-2").style.fontSize = "3vw";
+            document.getElementById("head-tab-3").style.fontSize = "3vw";
+            document.getElementById("head-tab-4").style.fontSize = "3vw";
+            document.getElementById("head-tab-5").style.fontSize = "3vw";
             header.classList.remove("sticky");
         }
     }
