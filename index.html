@@ -17,12 +17,12 @@
 <body>
     <!-- Header and links -->
 
-    <div class="header_img">
+    <div class="header-img">
         <img src="./Content/JWST_Dwarf_Galaxy_Banner.png" alt="Galaxy Banner" width="100%" height="100%" style="text-align: center;">
         <href/ id="me"></href>
     </div>
     
-    <div class="header_tabs" id="tabs">
+    <div class="header-tabs" id="tabs">
         <h1 id="head">Jan Carlos Rubio Sanchez</h1>
         <div class="tab" id="head-tab-1" onClick="document.getElementById('me').scrollIntoView();">about me</div>
         <div class="tab" id="head-tab-2" onClick="document.getElementById('education').scrollIntoView();">education</div>
@@ -173,7 +173,7 @@
             <!-- Texas Advanced Computing Center -->
             <p>
                 <div class="resume-header">
-                    <div class="resume_employer">
+                    <div class="resume-employer">
                         <span style="font-weight: bold;">Texas Advanced Computing Center, </span><span style="font-style: italic;">Austin, TX</span>
                     </div>
                     <div class="resume-dates">
@@ -220,7 +220,7 @@
             <!-- Code@TACC -->
             <p>
                 <div class="resume-header">
-                    <div class="resume_employer">
+                    <div class="resume-employer">
                         <span style="font-weight: bold;">Code@TACC Summer Camps, </span><span style="font-style: italic;">Austin, TX</span>
                     </div>
                     <div class="resume-dates">
@@ -289,6 +289,8 @@
 
         </section>
 
+        <!-- ADD MORE DETAIL TO PROJECTS SUCH AS LINKS, PICTURES, and DEMONSTRATIONS -->
+
         <!-- Projects -->
         <section>
             <div class='section-header'>
@@ -307,7 +309,7 @@
             <!-- Hardware Checkout App -->
             <p>
                 <div class="resume-header">
-                    <div class="resume_employer">
+                    <div class="resume-employer">
                         <span style="font-weight: bold;">Hardware Checkout App</span>
                     </div>
                 </div>
@@ -320,6 +322,11 @@
                         <li>
                             Bringing together ReactJS, HTML, CSS, Flask, MongoDB non-relational database, and Heroku deployment.
                         </li>
+                        <li>
+                            <a href="https://github.com/jcr4698/ECE461L_Team_Project" target="_blank">
+                                View source code
+                            </a>
+                        </li>
                     </ul> 
                 </div>
             </p>
@@ -327,12 +334,12 @@
             <!-- Stallion File Finder -->
             <p>
                 <div class="resume-header">
-                    <div class="resume_employer">
+                    <div class="resume-employer">
                         <span style="font-weight: bold;">Stallion File Finder</span>
                     </div>
                 </div>
                 <div class="exp-info">
-                    <i>Library of Tools developed in C</i>
+                    <i>Library of Data Management Tools developed in C</i>
                     <ul style="margin-left: 3%; margin-top: 0%; line-height: 200%;">
                         <li>
                             A library that allows users to document and navigate data through the terminal or its graphical user interface.
@@ -340,6 +347,16 @@
                         <li>
                             Implementation of the Linux utility library, process system calls, and the GTK widget toolkit.
                         </li>
+                        <li>
+                            <a href="https://github.com/jcr4698/Stallion_File_Finder" target="_blank">
+                                View source code
+                            </a>
+                        </li>
+                        <!-- <button onclick="project_shower('finder-app')"">
+                            expand/shrink
+                        </button>
+                        <br>
+                        <iframe id="finder-app" style="transition: all .5s linear" height="0" width="0" src="./Content/File_Finder_Example.png" scrolling="no" frameborder='0'></iframe> -->
                     </ul> 
                 </div>
             </p>
@@ -347,7 +364,7 @@
             <!-- Inline Testing -->
             <p>
                 <div class="resume-header">
-                    <div class="resume_employer">
+                    <div class="resume-employer">
                         <span style="font-weight: bold;">Inline Testing</span>
                     </div>
                 </div>
@@ -360,6 +377,67 @@
                         <li>
                             Team project that advances the study of Inline Testing as a testing framework for Python and Java.
                         </li>
+                        <li>
+                            <a href="https://github.com/MichaelFortanely/InlineTesting" target="_blank">
+                                View source code
+                            </a>
+                        </li>
+                    </ul> 
+                </div>
+            </p>
+
+            <!-- DCXer -->
+            <p>
+                <div class="resume-header">
+                    <div class="resume-employer">
+                        <span style="font-weight: bold;">DCXer</span>
+                    </div>
+                </div>
+                <div class="exp-info">
+                    <i>File Automation Tool developed in Python</i>
+                    <ul style="margin-left: 3%; margin-top: 0%; line-height: 200%;">
+                        <li>
+                            An automated visualization tool that allows researchers to create neatly organized Display Cluster files (DCX) quickly and efficiently.
+                        </li>
+                        <li>
+                            The program was developed in Python and uses operating system commands to access the file system and multi-process capabilities.
+                        </li>
+                        <li>
+                            For the front-end side, Zenity was utilized to provide a file selection prompt for ease of use.
+                        </li>
+                        <li>
+                            <a href="https://github.com/jcr4698/DCXer" target="_blank">
+                                View source code
+                            </a>
+                        </li>
+                    </ul> 
+                </div>
+            </p>
+
+            <!-- Offensive Text Detection -->
+            <p>
+                <div class="resume-header">
+                    <div class="resume-employer">
+                        <span style="font-weight: bold;">Offensive Text Detection</span>
+                    </div>
+                </div>
+                <div class="exp-info">
+                    <i>Machine Learning & Data Science Project</i>
+                    <ul style="margin-left: 3%; margin-top: 0%; line-height: 200%;">
+                        <li>
+                            Team project with the goal of researching the field of natural processing language.
+                        </li>
+                        <li>
+                            Multi-Layered Perceptron classifier that predicts whether a given string of text is offensive or not.
+                        </li>
+                        <li>
+                            The dataset used was a collection of comments & replies obtained from social media platforms such as Twitter, Reddit, and Facebook.
+                        </li>
+                        <li>
+                            <a href="https://github.com/lukepyoungs/DataScienceLabFinal" target="_blank">
+                                View source code
+                            </a>
+                        </li>
                     </ul> 
                 </div>
             </p>
@@ -367,7 +445,7 @@
             <!-- Jan's Auction -->
             <p>
                 <div class="resume-header">
-                    <div class="resume_employer">
+                    <div class="resume-employer">
                         <span style="font-weight: bold;">Jan's Auction</span>
                     </div>
                 </div>
@@ -380,6 +458,11 @@
                         <href/ id="media"></href>
                         <li>
                             Application of socket programming, JavaFX Interfacing, and multithreading.
+                        </li>
+                        <li>
+                            <a href="https://github.com/jcr4698/Bidding_Server_Client_Network" target="_blank">
+                                View source code
+                            </a>
                         </li>
                     </ul> 
                 </div>
@@ -408,24 +491,24 @@
                     <div class="graphic-row">
                         <!-- Gmail -->
                         <div class="graphic">
-                            <a href="mailto:jcaj750@gmail.com" target=”_blank” class="fa fa-google" style="font-size: 12vw;"></a>
+                            <a href="mailto:jcaj750@gmail.com" target="_blank" class="fa fa-google" style="font-size: 12vw;"></a>
                         </div>
                     
                         <!-- LinkedIn -->
                         <div class="graphic">
-                            <a href="https://www.linkedin.com/in/jan-carlos-rubio-sanchez/" target=”_blank” class="fa fa-linkedin" style="font-size: 12vw"></a>
+                            <a href="https://www.linkedin.com/in/jan-carlos-rubio-sanchez/" target="_blank" class="fa fa-linkedin" style="font-size: 12vw"></a>
                         </div>
 
                         <!-- Github -->
                         <div class="graphic">
-                            <a href="https://github.com/jcr4698" target=”_blank” class="fa fa-github" style="font-size: 12vw;"></a>
+                            <a href="https://github.com/jcr4698" target="_blank" class="fa fa-github" style="font-size: 12vw;"></a>
                         </div>
                     </div>
 
                     <div class="graphic-row">
                         <!-- Scratch -->
                         <div class="graphic">
-                            <a href="https://scratch.mit.edu/users/JanDaNerd/" target=”_blank” class="fa fa-scratch">
+                            <a href="https://scratch.mit.edu/users/JanDaNerd/" target="_blank" class="fa fa-scratch">
                                 <!-- <img src="https://uploads.scratch.mit.edu/get_image/user/17968278_60x60.png" style="width: 100%;"> -->
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Scratch.logo.S.png" style="width: auto; height: 100%;">
                             </a>
@@ -433,19 +516,19 @@
                                         
                         <!-- Twitter -->
                         <div class="graphic">
-                            <a href="https://twitter.com/Programmed_Bean/" target=”_blank” class="fa fa-twitter" style="font-size: 12vw"></a>
+                            <a href="https://twitter.com/Programmed_Bean/" target="_blank" class="fa fa-twitter" style="font-size: 12vw"></a>
                         </div>
 
                         <!-- Facebook -->
                         <div class="graphic">
-                            <a href="https://www.facebook.com/alanjan.rubio/" target=”_blank” class="fa fa-facebook" style="font-size: 12vw"></a>
+                            <a href="https://www.facebook.com/alanjan.rubio/" target="_blank" class="fa fa-facebook" style="font-size: 12vw"></a>
                         </div>
                     </div>
 
                     <div class="graphic-row">
                         <!-- Instagram -->
                         <div class="graphic">
-                            <a href="https://www.instagram.com/jancarlosrubiosanchez/" target=”_blank” class="fa fa-instagram" style="font-size: 12vw"></a>
+                            <a href="https://www.instagram.com/jancarlosrubiosanchez/" target="_blank" class="fa fa-instagram" style="font-size: 12vw"></a>
                         </div>
                     </div>
 
@@ -513,13 +596,12 @@
 </body>
 
 <script>
-
-    window.onscroll = function () { myFunction() };
+    window.onscroll = function () { adjust_header() };
 
     var header = document.getElementById("tabs");
     var sticky = header.offsetTop;
 
-    function myFunction() {
+    function adjust_header() {
         if (window.pageYOffset > sticky) {
             document.getElementById("head").style.fontSize = "3vw";
             document.getElementById("head-tab-1").style.fontSize = "2vw";
@@ -538,7 +620,30 @@
             header.classList.remove("sticky");
         }
     }
+</script>
 
+<script>
+    // let heroku_show = true;
+    // let matterport_show = true;
+    let finder_show = true;
+
+    function project_shower(id) {
+        // if(id === "heroku-app") {
+        // 	heroku_show = !heroku_show;
+        // 	document.getElementById(id).width = heroku_show ? 0 : "99%";
+        // 	document.getElementById(id).height = heroku_show ? 0 : "75%";
+        // }
+        // if(id === "matterport-app") {
+        // 	matterport_show = !matterport_show;
+        // 	document.getElementById(id).width = matterport_show ? 0 : "99%";
+        // 	document.getElementById(id).height = matterport_show ? 0 : "75%";
+        // }
+        if (id === "finder-app") {
+            finder_show = !finder_show;
+            document.getElementById(id).width = finder_show ? 0 : "100%";
+            document.getElementById(id).height = finder_show ? 0 : "80%";
+        }
+    }
 </script>
 
 </html>

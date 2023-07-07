@@ -136,7 +136,7 @@ body.sticky-header {
 
 /* Header and Tabs */
 
-.header_img {
+.header-img {
     background-color: #0b0e0b;
     /* border: rgb(255, 255, 255) solid 1px; */
     /* padding: 30px; */
@@ -153,7 +153,7 @@ body.sticky-header {
     transition: 0.5s;
 }
 
-.header_tabs {
+.header-tabs {
     z-index: 99;
     position: relative;
     width: 100%;
@@ -288,6 +288,7 @@ body.sticky-header {
 }
 
 .coursework-desc {
+    color: #bdbdbd;
     margin: 0% 0%;
     font-style: italic;
     font-size: 1.4vw;
@@ -306,7 +307,7 @@ body.sticky-header {
     color: #ffffff;
 }
 
-#resume_employer {
+#resume-employer {
     float: left;
 }
 
@@ -318,6 +319,44 @@ body.sticky-header {
     margin: 0% 0% 0% 6%;
     font-size: 1.7vw;
     color: #ffffff;
+}
+
+/* Projects */
+
+button {
+    /* Font */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #0ee2e2;
+    background-color: #000000;
+    /* Size */
+    /* height: 45px;
+    width: 280px; */
+    /* Margins and Alignments */
+    margin-top: 18px;
+    margin-left: 26px;
+    margin-bottom: 25px;
+    vertical-align: middle;
+    /* Border */
+    border-color: #ffffff;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+button:hover {
+    /* Font */
+    color: #ffffff;
+    /* Settings */
+    border: #404040;
+    border-style: solid;
+    border-width: 3px;
+}
+
+button:active {
+    /* Settings */
+    border: #0ee2e2;
+    border-style: solid;
+    border-width: 4px;
 }
 
 /* Social Media */
@@ -351,8 +390,6 @@ body.sticky-header {
     overflow: hidden;
     margin: 1%;
 }
-
-/* Social Media */
 
 .fa { /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_social_media_buttons */
     position: relative;
