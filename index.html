@@ -554,10 +554,6 @@
                         </div>
                     </div>
 
-                    <!-- <div class="graphic-row">
-                        
-                    </div> -->
-
                     <div class="graphic-row">
                         <!-- Instagram -->
                         <div class="graphic">
@@ -706,7 +702,9 @@
             }
 
             document.getElementById(id.concat("-app")).style.width = new_width;
-            document.getElementById("offensive-app").style.height = new_height;
+            if(id === "offensive") {
+                document.getElementById(id.concat("-app")).style.height = new_height;
+            }
             document.getElementById(id.concat("-text")).style.marginTop = new_margin;
         }
     }
