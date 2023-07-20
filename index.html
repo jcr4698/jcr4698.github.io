@@ -18,8 +18,7 @@
     <!-- Header and links -->
 
     <div class="header-img">
-        <img src="./Content/JWST_Dwarf_Galaxy_Banner.png" alt="Galaxy Banner" width="100%" height="100%" style="text-align: center;">
-        <href/ id="me"></href>
+        <img src="./Content/JWST_Dwarf_Galaxy_Banner.png" alt="Galaxy Banner" width="100%" height="100%" style="text-align: center;">    
     </div>
     
     <div class="header-tabs" id="tabs">
@@ -33,9 +32,10 @@
 
     <!-- Porfolio Content -->
     <div class="content">
+        <href id="me"></href>
 
         <!-- ABOUT ME -->
-        <section style="align-content: center;">
+        <section style="align-content: center; height: 35vw;">
             <div class='section-header'>
                 <div class="section-pointer">
                     <div class="shape-container">
@@ -48,10 +48,9 @@
                     </span>
                 </div>
             </div>
-            <div class='side-by-side' height="40vw">
+            <div class='side-by-side' style="height: 77%;">
                 <div class='me-image'>
-                    <img src="Content/IMG_7898.jpg" alt="Jan Cover Photo" style="height: auto; width: 100%;"></img>
-                    <href id="education"></href>
+                    <img src="Content/IMG_7898.jpg" alt="Jan Cover Photo" style="height: 100%; width: auto;"></img>
                 </div>
                 <div class='me-text'>
                     <div>
@@ -66,10 +65,11 @@
                     </div>
                 </div>
             </div>
+            <href id="education"></href>
         </section>
-    
+        
         <!-- EDUCATION -->
-        <section>
+        <section style="align-content: center; height: 65vw;">
             <div class='section-header'>
                 <div class="section-pointer">
                     <div class="shape-container">
@@ -140,7 +140,6 @@
                 <br />
 
                 <span class="coursework">Circuit Theory – </span>
-                <href/ id="experience"></href>
                 <i class="coursework-desc">Electric Circuit and Electromagnetic Theory & Computation in MATLAB</i>
                 <br />
 
@@ -152,8 +151,9 @@
                 <i class="coursework-desc">Embedded System Analysis in Assembly and C</i>
                 <br />
             </div>
-            
         </section>
+
+        <href/ id="experience"></href>
     
         <!-- EXPERIENCE -->
         <section>
@@ -276,17 +276,14 @@
                             Assisted in the operation of the Raspberry Pi and Enviro+ to transform environmental values into 
                             virtual data on Jupyter Notebooks.
                         </li>
-                        <href/ id="projects"></href>
                         <li>
                             Helped students utilize engineering tools such as Sensors, General-Purpose Input & Output Pins, 
                             and Enviro-related Python Libraries.
                         </li>
                     </ul>
-
                 </div>
-                
             </p>
-
+            <href/ id="projects"></href>
         </section>
 
         <!-- ADD MORE DETAIL TO PROJECTS SUCH AS LINKS, PICTURES, and DEMONSTRATIONS -->
@@ -315,7 +312,18 @@
                 </div>
                 <div class="exp-info">
                     <i>Web Application</i>
-                    <ul style="margin-left: 3%; margin-top: 0%; line-height: 200%;">
+                    <br>
+                    <button onclick="project_shower('hardware')"">
+                        expand/shrink
+                    </button>
+                    <button>
+                        <a href="https://team-project-ece461l.herokuapp.com/" target="_blank">
+                            visit website
+                        </a>
+                    </button>
+                    <br>
+                    <img id="hardware-app" src="./Content/Project_Hardware_Manager.png" style="transition: all .5s linear;" height="auto" width="0%">
+                    <ul id="hardware-text" style="margin-left: 3%; margin-top: -3.5%; line-height: 200%;">
                         <li>
                             A website that allows users to log in and manage their projects by checking in/out hardware sets.
                         </li>
@@ -340,7 +348,13 @@
                 </div>
                 <div class="exp-info">
                     <i>Library of Data Management Tools developed in C</i>
-                    <ul style="margin-left: 3%; margin-top: 0%; line-height: 200%;">
+                    <br>
+                    <button onclick="project_shower('finder')"">
+                        expand/shrink
+                    </button>
+                    <br>
+                    <img id="finder-app" src="./Content/File_Finder_Example.png" style="transition: all .5s linear;" height="auto" width="0%">
+                    <ul id="finder-text" style="margin-left: 3%; margin-top: -3.5%; line-height: 200%;">
                         <li>
                             A library that allows users to document and navigate data through the terminal or its graphical user interface.
                         </li>
@@ -352,11 +366,6 @@
                                 View source code
                             </a>
                         </li>
-                        <!-- <button onclick="project_shower('finder-app')"">
-                            expand/shrink
-                        </button>
-                        <br>
-                        <iframe id="finder-app" style="transition: all .5s linear" height="0" width="0" src="./Content/File_Finder_Example.png" scrolling="no" frameborder='0'></iframe> -->
                     </ul> 
                 </div>
             </p>
@@ -370,7 +379,13 @@
                 </div>
                 <div class="exp-info">
                     <i>Machine Learning Honors Senior Project</i>
-                    <ul style="margin-left: 3%; margin-top: 0%; line-height: 200%;">
+                    <br>
+                    <button onclick="project_shower('inline')"">
+                        expand/shrink
+                    </button>
+                    <br>
+                    <img id="inline-app" src="./Content/Inline_Tests_Example.png" style="transition: all .5s linear;" height="auto" width="0%">
+                    <ul id="inline-text" style="margin-left: 3%; margin-top: -3.5%; line-height: 200%;">
                         <li>
                             Decision tree binary classifier that determines the worthiness of a program statement to have an I-Test.
                         </li>
@@ -395,7 +410,13 @@
                 </div>
                 <div class="exp-info">
                     <i>File Automation Tool developed in Python</i>
-                    <ul style="margin-left: 3%; margin-top: 0%; line-height: 200%;">
+                    <br>
+                    <button onclick="project_shower('dcxer')"">
+                        expand/shrink
+                    </button>
+                    <br>
+                    <img id="dcxer-app" src="./Content/DCXer_Example.png" style="transition: all .5s linear;" height="auto" width="0%">
+                    <ul id="dcxer-text" style="margin-left: 3%; margin-top: -3.5%; line-height: 200%;">
                         <li>
                             An automated visualization tool that allows researchers to create neatly organized Display Cluster files (DCX) quickly and efficiently.
                         </li>
@@ -423,7 +444,19 @@
                 </div>
                 <div class="exp-info">
                     <i>Machine Learning & Data Science Project</i>
-                    <ul style="margin-left: 3%; margin-top: 0%; line-height: 200%;">
+                    <br>
+                    <button onclick="project_shower('offensive')"">
+                        expand/shrink
+                    </button>
+                    <br>
+                    <!-- <div id="offensive-app" style="position:relative; transition: all .5s linear;" width="100%" height="auto"> -->
+                        <!-- <a style="position:absolute; top:20px; right:1rem; opacity:0.8;" href="https://clipchamp.com/watch/WP8xuRuz2EZ?utm_source=embed&utm_medium=embed&utm_campaign=watch" target="_blank">
+                            <img loading="lazy" style="height:22px;" src="https://clipchamp.com/e.svg" alt="Made with Clipchamp"/>
+                        </a> -->
+                    <iframe id="offensive-app" allow="autoplay;" allowfullscreen style="border:none; transition: all .5s linear;" src="https://clipchamp.com/watch/WP8xuRuz2EZ/embed" height="0vw" width="0%"></iframe>
+                    <!-- <img id="offensive-app" src="./Content/DCXer_Example.png" style="transition: all .5s linear;" height="auto" width="0%"> -->
+                    <!-- </div> -->
+                    <ul id="offensive-text" style="margin-left: 3%; margin-top: -3.5%; line-height: 200%;">
                         <li>
                             Team project with the goal of researching the field of natural processing language.
                         </li>
@@ -455,7 +488,6 @@
                         <li>
                             Bidding Server that handles simultaneous clients and provides a graphic user interface for ease of use
                         </li>
-                        <href/ id="media"></href>
                         <li>
                             Application of socket programming, JavaFX Interfacing, and multithreading.
                         </li>
@@ -467,7 +499,7 @@
                     </ul> 
                 </div>
             </p>
-    
+            <href/ id="media"></href>
         </section>
 
         <!-- Socials -->
@@ -491,52 +523,60 @@
                     <div class="graphic-row">
                         <!-- Gmail -->
                         <div class="graphic">
-                            <a href="mailto:jcaj750@gmail.com" target="_blank" class="fa fa-google" style="font-size: 12vw;"></a>
+                            <a href="mailto:jcaj750@gmail.com" target="_blank" class="fa fa-google" style="font-size: 7vw;"></a>
                         </div>
                     
                         <!-- LinkedIn -->
                         <div class="graphic">
-                            <a href="https://www.linkedin.com/in/jan-carlos-rubio-sanchez/" target="_blank" class="fa fa-linkedin" style="font-size: 12vw"></a>
+                            <a href="https://www.linkedin.com/in/jan-carlos-rubio-sanchez/" target="_blank" class="fa fa-linkedin" style="font-size: 7vw"></a>
                         </div>
 
                         <!-- Github -->
                         <div class="graphic">
-                            <a href="https://github.com/jcr4698" target="_blank" class="fa fa-github" style="font-size: 12vw;"></a>
+                            <a href="https://github.com/jcr4698" target="_blank" class="fa fa-github" style="font-size: 7vw;"></a>
                         </div>
-                    </div>
 
-                    <div class="graphic-row">
                         <!-- Scratch -->
                         <div class="graphic">
                             <a href="https://scratch.mit.edu/users/JanDaNerd/" target="_blank" class="fa fa-scratch">
-                                <!-- <img src="https://uploads.scratch.mit.edu/get_image/user/17968278_60x60.png" style="width: 100%;"> -->
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Scratch.logo.S.png" style="width: auto; height: 100%;">
                             </a>
                         </div>
                                         
                         <!-- Twitter -->
                         <div class="graphic">
-                            <a href="https://twitter.com/Programmed_Bean/" target="_blank" class="fa fa-twitter" style="font-size: 12vw"></a>
+                            <a href="https://twitter.com/Programmed_Bean/" target="_blank" class="fa fa-twitter" style="font-size: 7vw"></a>
                         </div>
 
                         <!-- Facebook -->
                         <div class="graphic">
-                            <a href="https://www.facebook.com/alanjan.rubio/" target="_blank" class="fa fa-facebook" style="font-size: 12vw"></a>
+                            <a href="https://www.facebook.com/alanjan.rubio/" target="_blank" class="fa fa-facebook" style="font-size: 7vw"></a>
                         </div>
                     </div>
+
+                    <!-- <div class="graphic-row">
+                        
+                    </div> -->
 
                     <div class="graphic-row">
                         <!-- Instagram -->
                         <div class="graphic">
-                            <a href="https://www.instagram.com/jancarlosrubiosanchez/" target="_blank" class="fa fa-instagram" style="font-size: 12vw"></a>
+                            <a href="https://www.instagram.com/jancarlosrubiosanchez/" target="_blank" class="fa fa-instagram" style="font-size: 8vw"></a>
                         </div>
+
+                        <!-- discord -->
+                        <div class="graphic">
+                            <a href="https://discordapp.com/users/242057894730792961" target="_blank" class="fa fa-discord">
+                                <img src="./Content/Discord_Logo.png" style="width: auto; height: 95%;">
+                            </a>
+                            <!-- <a href="https://discordapp.com/users/242057894730792961" target="_blank" class="fa fa-discord" style="font-size: 7vw"></a> -->
+                        </div>
+                        <!-- <i class='fab fa-discord' style='font-size:48px; color: white;'></i>
+                        <a href="" class="fab fa-discord" style="font-size: 8vw"></a> -->
                     </div>
 
                 </div>
-                <!-- discord -->
-                <!-- <a href="" class="fab fa-discord"></a> -->
-                <!-- <i class='fab fa-discord' style='font-size:48px; color: white;'></i>
-                <a href="https://discordapp.com/users/242057894730792961" class="fab fa-discord" style="font-size: 8vw"></a> -->
+                
 
             </div>
 
@@ -603,7 +643,7 @@
 
     function adjust_header() {
         if (window.pageYOffset > sticky) {
-            document.getElementById("head").style.fontSize = "3vw";
+            document.getElementById("head").style.fontSize = "0vw";
             document.getElementById("head-tab-1").style.fontSize = "2vw";
             document.getElementById("head-tab-2").style.fontSize = "2vw";
             document.getElementById("head-tab-3").style.fontSize = "2vw";
@@ -611,39 +651,66 @@
             document.getElementById("head-tab-5").style.fontSize = "2vw";
             header.classList.add("sticky");
         } else {
-            document.getElementById("head").style.fontSize = "4vw";
-            document.getElementById("head-tab-1").style.fontSize = "3vw";
-            document.getElementById("head-tab-2").style.fontSize = "3vw";
-            document.getElementById("head-tab-3").style.fontSize = "3vw";
-            document.getElementById("head-tab-4").style.fontSize = "3vw";
-            document.getElementById("head-tab-5").style.fontSize = "3vw";
+            document.getElementById("head").style.fontSize = "3vw";
+            document.getElementById("head-tab-1").style.fontSize = "2.5vw";
+            document.getElementById("head-tab-2").style.fontSize = "2.5vw";
+            document.getElementById("head-tab-3").style.fontSize = "2.5vw";
+            document.getElementById("head-tab-4").style.fontSize = "2.5vw";
+            document.getElementById("head-tab-5").style.fontSize = "2.5vw";
             header.classList.remove("sticky");
         }
     }
 </script>
 
 <script>
-    // let heroku_show = true;
-    // let matterport_show = true;
     let finder_show = true;
+    let hardware_show = true;
+    let inline_show = true;
+    let dcxer_show = true;
+    let offensive_show = true;
 
     function project_shower(id) {
-        // if(id === "heroku-app") {
-        // 	heroku_show = !heroku_show;
-        // 	document.getElementById(id).width = heroku_show ? 0 : "99%";
-        // 	document.getElementById(id).height = heroku_show ? 0 : "75%";
-        // }
-        // if(id === "matterport-app") {
-        // 	matterport_show = !matterport_show;
-        // 	document.getElementById(id).width = matterport_show ? 0 : "99%";
-        // 	document.getElementById(id).height = matterport_show ? 0 : "75%";
-        // }
-        if (id === "finder-app") {
-            finder_show = !finder_show;
-            document.getElementById(id).width = finder_show ? 0 : "100%";
-            document.getElementById(id).height = finder_show ? 0 : "80%";
+
+        if(id !== null) {
+
+            let new_width = "100%";
+            let new_height = "40vw"
+            let new_margin = "-10px";
+            let new_transition = "all .5s linear";
+
+            if(id === "finder") {
+                finder_show = !finder_show;
+                new_width = finder_show ? "0%" : "100%";
+                new_margin = finder_show ? "-3.5%" : "-10px";
+            }
+            else if(id === "hardware") {
+                hardware_show = !hardware_show;
+                new_width = hardware_show ? "0%" : "100%";
+                new_margin = hardware_show ? "-3.5%" : "-10px";
+            }
+            else if(id === "inline") {
+                inline_show = !inline_show;
+                new_width = inline_show ? "0%" : "100%";
+                new_margin = inline_show ? "-3.5%" : "-10px";
+            }
+            else if(id === "dcxer") {
+                dcxer_show = !dcxer_show;
+                new_width = dcxer_show ? "0%" : "100%";
+                new_margin = dcxer_show ? "-3.5%" : "-10px";
+            }
+            else if(id === "offensive") {
+                offensive_show = !offensive_show;
+                new_width = offensive_show ? "0%" : "100%";
+                new_height = offensive_show ? "0vw" : "30vw";
+                new_margin = offensive_show ? "-3.5%" : "-10px";
+            }
+
+            document.getElementById(id.concat("-app")).style.width = new_width;
+            document.getElementById("offensive-app").style.height = new_height;
+            document.getElementById(id.concat("-text")).style.marginTop = new_margin;
         }
     }
+
 </script>
 
 </html>
