@@ -11,7 +11,6 @@
     <meta name="keywords" content="Jan, Software Engineering, ECE, UT Austin, Texas Advanced Computing Center (TACC), Class of 2023" />
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
     <title>Jan's Portfolio</title>
 </head>
 <body>
@@ -35,7 +34,7 @@
         <href id="me"></href>
 
         <!-- ABOUT ME -->
-        <section style="align-content: center; height: 35vw;">
+        <section style="align-content: center; height: auto;">
             <div class='section-header'>
                 <div class="section-pointer">
                     <div class="shape-container">
@@ -48,16 +47,16 @@
                     </span>
                 </div>
             </div>
-            <div class='side-by-side' style="height: 77%;">
-                <div class='me-image'>
-                    <img src="Content/IMG_7898.jpg" alt="Jan Cover Photo" style="height: 100%; width: auto;"></img>
+            <div class='side-by-side' style="height: 90%">
+                <div class='me-image' style="margin: auto 0 auto auto;">
+                    <img class='jan-cover' src="./Content/IMG_7898.jpg" alt="Jan Cover Photo" style="max-width: 300px; width: 100%;"></img>
                 </div>
-                <div class='me-text'>
+                <div class='me-text' style="margin: auto auto auto 0;">
                     <div>
-                        <div style="margin: 2%;">Jan Carlos Rubio Sanchez</div>
-                        <div style="margin: 2%;">B.S. in Electrical & Computer Engineering</div>
-                        <div style="margin: 2%">Technical Track: Software Engineering</div>
-                        <div style="margin: 2%;">
+                        <div style="margin: 2% 0% 5% 2%;">Jan Carlos Rubio Sanchez</div>
+                        <div style="margin: 2% 0% 5% 2%;">B.S. in Electrical & Computer Engineering</div>
+                        <div style="margin: 2% 0% 5% 2%;">Technical Track: Software Engineering</div>
+                        <div style="margin: 2% 0% 5% 2%;">
                             Hello, I am a recent college graduate with degree in Software Engineering and a strong
                             foundation in hardware. I believe that a good program doesn't need fancy parts, but rather
                             efficient code and metal components that work co-dependently to solve a problem effectively.
@@ -69,7 +68,7 @@
         </section>
         
         <!-- EDUCATION -->
-        <section style="align-content: center; height: 65vw;">
+        <section style="align-content: center; height: auto;">
             <div class='section-header'>
                 <div class="section-pointer">
                     <div class="shape-container">
@@ -82,74 +81,90 @@
                     </span>
                 </div>
             </div>
-            <div class="side-by-side" height="20vw">
-                <div class="me-text">
-                    <div style="margin: 2%;">
-                        I recently received a Bachelor’s in Electrical & Computer Engineering
+            <div class="edu-side-by-side" style="height: auto;">
+                <div class="edu-desc-area">
+                    <div class="edu-desc">
+                        I recently received a Bachelor's in Electrical & Computer Engineering
                         from the University of Texas at Austin with a technical focus in
                         Software Engineering.
                     </div>
                 </div>
-                <div class="me-image">
-                    <img src="./Content/UT_Austin_Emblem.png" alt="UT Austin" style="width: 55%;">
+                <div class="edu-image">
+                    <img class="edu-image-content" src="./Content/UT_Austin_Emblem.png" alt="UT Austin">
                 </div>
             </div>
 
             <div class="coursework-container">
-                <span style="font-weight: bold;">Relevant Coursework:</span>
-                <br />
+                <div>
+                    <span class="coursework-title">Relevant Coursework:</span>
+                </div>
+                <br/>
 
-                <span class="coursework">Software Engineering Laboratory – </span>
-                <i class="coursework-desc">Full Stack Development & Software Development Life Cycle</i>
-                <br />
+                <div class="coursework-spacing">
+                    <span class="coursework">Software Engineering Laboratory – </span>
+                    <i class="coursework-desc"">Full Stack Development & Software Development Life Cycle</i>
+                </div>
 
-                <span class="coursework">Senior Engineering Design Laboratory – </span>
-                <i class="coursework-desc">Honors Engineering Capstone Project Design</i>
-                <br />
-
-                <span class="coursework">Requirements Engineering – </span>
-                <i class="coursework-desc">Acquisition, Modeling, Analysis & Dissemination of Requirements</i>
-                <br />
-
-                <span class="coursework">Software Testing – </span>
-                <i class="coursework-desc">Software Testing Theory & Practice in Java</i>
-                <br />
+                <div class="coursework-spacing">
+                    <span class="coursework">Senior Engineering Design Laboratory – </span>
+                    <i class="coursework-desc">Honors Engineering Capstone Project Design</i>
+                </div>
                 
-                <span class="coursework">Data Science Laboratory – </span>
-                <i class="coursework-desc">Machine Learning Models & Statistics</i>
-                <br />
+                <div class="coursework-spacing">
+                    <span class="coursework">Requirements Engineering – </span>
+                <i class="coursework-desc">Acquisition, Modeling, Analysis & Dissemination of Requirements</i>
+                </div>
 
-                <span class="coursework">Operating Systems – </span>
-                <i class="coursework-desc">Fundamentals of Operating Systems</i>
-                <br />
+                <div class="coursework-spacing">
+                    <span class="coursework">Software Testing – </span>
+                    <i class="coursework-desc">Software Testing Theory & Practice in Java</i>
+                </div>
+                
+                <div class="coursework-spacing">
+                    <span class="coursework">Data Science Laboratory – </span>
+                    <i class="coursework-desc">Machine Learning Models & Statistics</i>
+                </div>
 
-                <span class="coursework">Algorithms – </span>
-                <i class="coursework-desc">Proof-based Reasoning & Implementation of Algorithms</i>
-                <br />
+                <div class="coursework-spacing">
+                    <span class="coursework">Operating Systems – </span>
+                    <i class="coursework-desc">Fundamentals of Operating Systems</i>
+                </div>
 
-                <span class="coursework">Software Design & Design II – </span>
-                <i class="coursework-desc">Data Structures & Algorithm analysis in Java</i>
-                <br />
+                <div class="coursework-spacing">
+                    <span class="coursework">Algorithms – </span>
+                    <i class="coursework-desc">Proof-based Reasoning & Implementation of Algorithms</i>
+                </div>
 
-                <span class="coursework">Software Design & Design I – </span>
-                <i class="coursework-desc">Data Structures & Algorithm analysis in C/C++</i>
-                <br />
+                <div class="coursework-spacing">
+                    <span class="coursework">Software Design & Design II – </span>
+                    <i class="coursework-desc">Data Structures & Algorithm analysis in Java</i>
+                </div>
 
-                <span class="coursework">Digital Logic – </span>
-                <i class="coursework-desc">FPGA Development & Analysis in Verilog</i>
-                <br />
+                <div class="coursework-spacing">
+                    <span class="coursework">Software Design & Design I – </span>
+                    <i class="coursework-desc">Data Structures & Algorithm analysis in C/C++</i>
+                </div>
 
-                <span class="coursework">Circuit Theory – </span>
-                <i class="coursework-desc">Electric Circuit and Electromagnetic Theory & Computation in MATLAB</i>
-                <br />
+                <div class="coursework-spacing">
+                    <span class="coursework">Digital Logic – </span>
+                    <i class="coursework-desc">FPGA Development & Analysis in Verilog</i>
+                </div>
 
-                <span class="coursework">Linear Systems & Signals – </span>
-                <i class="coursework-desc">Linear Signal Processing, Communication & Control Systems</i>
-                <br />
+                <div class="coursework-spacing">
+                    <span class="coursework">Circuit Theory – </span>
+                    <i class="coursework-desc">Electric Circuit and Electromagnetic Theory & Computation in MATLAB</i>
+                </div>
 
-                <span class="coursework">Introduction to Embedded Systems – </span>
-                <i class="coursework-desc">Embedded System Analysis in Assembly and C</i>
-                <br />
+                <div class="coursework-spacing">
+                    <span class="coursework">Linear Systems & Signals – </span>
+                    <i class="coursework-desc">Linear Signal Processing, Communication & Control Systems</i>
+                </div>
+
+                <div class="coursework-spacing">
+                    <span class="coursework">Introduction to Embedded Systems – </span>
+                    <i class="coursework-desc">Embedded System Analysis in Assembly and C</i>
+                </div>
+
             </div>
         </section>
 
@@ -171,7 +186,7 @@
             </div>
 
             <!-- Texas Advanced Computing Center -->
-            <p>
+            <p style="margin: 3% 0 0 0;">
                 <div class="resume-header">
                     <div class="resume-employer">
                         <span style="font-weight: bold;">Texas Advanced Computing Center, </span><span style="font-style: italic;">Austin, TX</span>
@@ -187,7 +202,6 @@
                             Developed Stallion File Finder, a library of C modules interfaced with the Gimp Tool Kit, for the 
                             purpose of enabling efficient search and management of research data in the project’s directory.
                         </li>
-                        <!-- Make the return separation larger (or text separation smaller) -->
                         <li>
                             Implemented an effective convention of organizing the Visualizations Lab’s file directory using the 
                             terminal environment and Unix-specific tools.
@@ -315,6 +329,11 @@
                     <br>
                     <button onclick="project_shower('hardware')"">
                         expand/shrink
+                    </button>
+                    <button>
+                        <a href="https://jcr4698.github.io/Hardware_Checkout/" target="_blank">
+                            try demo
+                        </a>
                     </button>
                     <button>
                         <a href="https://team-project-ece461l.herokuapp.com/" target="_blank">
@@ -517,7 +536,7 @@
                 </div>
             </div>
 
-            <div style="margin-left: 7%;">
+            <div style="margin-top: 3%; margin-left: 7%;">
                 <div class="graphic-grid">
                 
                     <div class="graphic-row">
