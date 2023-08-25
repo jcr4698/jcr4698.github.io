@@ -297,6 +297,32 @@ body.sticky-header {
     font-size: 2rem;
 }
 
+@media only screen and (min-width: 1400px) {
+
+    .me-image {
+        /* border: 1px dotted white; */
+        position: relative;
+        display: flex;
+        /* margin: 0 0 0 0; */
+        /* border: 1px solid white; */
+        /* padding: 1% 1%; */
+        /* top: 0%; */
+        width: 30%;
+        height: 560px;
+        /* margin: auto; */
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .me-image-content {
+        /* min-width: 300px; */
+        padding: 0 0 0 0;
+        width: 100%;
+        height: auto;
+    }
+}
+
 @media only screen and (max-width: 1400px) {
     
     .me-text {
@@ -305,6 +331,11 @@ body.sticky-header {
 
     .edu-desc {
         font-size: 1.5rem;
+    }
+
+    .me-image-content {
+        max-width: 300px;
+        width: 100%;
     }
 
 }
