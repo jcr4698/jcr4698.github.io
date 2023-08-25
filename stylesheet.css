@@ -308,7 +308,7 @@ body.sticky-header {
         /* padding: 1% 1%; */
         /* top: 0%; */
         width: 30%;
-        height: 560px;
+        height: auto;
         /* margin: auto; */
         align-items: center;
         justify-content: center;
