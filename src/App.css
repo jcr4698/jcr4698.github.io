@@ -75,6 +75,23 @@ html {
 	font-size: 9.5vw;
 }
 
+.devicon-container {
+	display: flex;
+	/* border: 1px white dotted; */
+	height: 100%;
+	width: 100%;
+	/* padding: 10%; */
+}
+
+.devicon {
+	display: inline-flex;
+	margin: auto;
+	/* border: 1px #92918f dotted; */
+	fill: #0ee2e2;
+	width: 80%;
+	height: 80%;
+}
+
 /* Header Item */
 
 .portfolio-header {
