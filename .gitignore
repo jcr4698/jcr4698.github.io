@@ -10,8 +10,6 @@
 
 # production
 /build
-react-app-env.d.ts
-tsconfig.json
 
 # misc
 .DS_Store
