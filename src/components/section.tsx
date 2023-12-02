@@ -7,7 +7,7 @@ type SectionProps = {
 
 function InfoSection({ section_title, section_content }: SectionProps) {
 	return (
-		<div style={{margin: "5% 0"}}>
+		<div>
 			{/* Section Pointer Shape */}
 			<div className="section-shape-aligner" /*style={{paddingTop: "2%"}}*/>
 				<div className="section-pointer-container">
@@ -16,7 +16,7 @@ function InfoSection({ section_title, section_content }: SectionProps) {
 			</div>
 
 			{/* Section Title */}
-			<section className="section-container">
+			<section className="section-container" style={{backgroundColor: "white"}}>
 				<div className="section-title-container" /*style={{paddingTop: "2.5%"}}*/>
 					<div className="section-title">
 						{section_title}

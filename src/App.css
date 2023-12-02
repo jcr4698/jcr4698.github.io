@@ -34,7 +34,7 @@ html {
 
 .App-link {
 	color: #61dafb;
-} */
+}
 
 @keyframes App-logo-spin {
 	from {
@@ -44,6 +44,18 @@ html {
 	to {
 		transform: rotate(360deg);
 	}
+} */
+
+.info-section-container {
+	padding: 2.5% 0;
+}
+
+.page-body-container {
+	background-color: #000000;
+}
+
+.portfolio-content-container {
+	background-image: url("./content/James-Webb-Space-Telescope-Image.png")
 }
 
 /* Banner */
@@ -92,6 +104,27 @@ html {
 	height: 80%;
 }
 
+/* Portfolio Title */
+
+.portfolio-name-container {
+	z-index: 50;
+	position: relative;
+	background-color: black;
+	padding: 1% 0;
+	height: auto;
+	width: 100%;
+	left: 0%;
+	text-align: center;
+	font-weight: bold;
+}
+
+.portfolio-name {
+	/* background-color: #000000; */
+	color: #0ee2e2;
+	font-size: calc(2.5vw + 1rem);
+	/* margin: 1% 0; */
+}
+
 /* Header Item */
 
 .portfolio-header {
@@ -107,13 +140,6 @@ html {
 	text-align: center;
 	/* font-size: 30px; */
 	font-weight: bold;
-}
-
-.portfolio-name {
-	/* background-color: #000000; */
-	color: #0ee2e2;
-	font-size: calc(2.5vw + 1rem);
-	margin: 1% 0;
 }
 
 @media only screen and (max-width: 500px) {
