@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.b1ec713e.css",
-    "main.js": "/static/js/main.1a6d2060.js",
+    "main.css": "/static/css/main.cf2624d2.css",
+    "main.js": "/static/js/main.396c5dba.js",
     "static/media/New_JWST_Dwarf_Galaxy_Banner.png": "/static/media/New_JWST_Dwarf_Galaxy_Banner.b6c74fc5c68c50448087.png",
+    "static/media/James-Webb-Space-Telescope-Image.png": "/static/media/James-Webb-Space-Telescope-Image.582557fec3ce34fbf439.png",
     "static/media/IMG_7898.jpg": "/static/media/IMG_7898.41b6455de4bd734aaec0.jpg",
     "static/media/Jan_Auction.png": "/static/media/Jan_Auction.06ad6716e4fe771430a0.png",
     "static/media/UT_Austin_Emblem.png": "/static/media/UT_Austin_Emblem.252e63393a12eb0681dd.png",
@@ -11,11 +12,11 @@
     "static/media/Project_Hardware_Manager.png": "/static/media/Project_Hardware_Manager.c708e2e7ee93607338db.png",
     "static/media/File_Finder_Example.png": "/static/media/File_Finder_Example.738396dbe12117eb72ec.png",
     "index.html": "/index.html",
-    "main.b1ec713e.css.map": "/static/css/main.b1ec713e.css.map",
-    "main.1a6d2060.js.map": "/static/js/main.1a6d2060.js.map"
+    "main.cf2624d2.css.map": "/static/css/main.cf2624d2.css.map",
+    "main.396c5dba.js.map": "/static/js/main.396c5dba.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1ec713e.css",
-    "static/js/main.1a6d2060.js"
+    "static/css/main.cf2624d2.css",
+    "static/js/main.396c5dba.js"
   ]
 }
