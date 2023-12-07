@@ -82,7 +82,7 @@ const logos = {
 
 function SocialMedia({ media }: MediaProp) {
 
-	console.log(media);
+	// console.log(media);
 
 	return (
 		<div className="media-wrapper">
