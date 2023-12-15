@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.cf2624d2.css",
-    "main.js": "/static/js/main.e5bcd4d7.js",
+    "main.js": "/static/js/main.9be71f26.js",
     "static/media/New_JWST_Dwarf_Galaxy_Banner.png": "/static/media/New_JWST_Dwarf_Galaxy_Banner.b6c74fc5c68c50448087.png",
     "static/media/James-Webb-Space-Telescope-Image.png": "/static/media/James-Webb-Space-Telescope-Image.582557fec3ce34fbf439.png",
     "static/media/IMG_7898.jpg": "/static/media/IMG_7898.41b6455de4bd734aaec0.jpg",
@@ -11,12 +11,13 @@
     "static/media/DCXer_Example.png": "/static/media/DCXer_Example.9cc7fff17f2f9321a9b9.png",
     "static/media/Project_Hardware_Manager.png": "/static/media/Project_Hardware_Manager.c708e2e7ee93607338db.png",
     "static/media/File_Finder_Example.png": "/static/media/File_Finder_Example.738396dbe12117eb72ec.png",
+    "static/media/Order_Manager_Demo.png": "/static/media/Order_Manager_Demo.c37b3e3d51f9209a96d1.png",
     "index.html": "/index.html",
     "main.cf2624d2.css.map": "/static/css/main.cf2624d2.css.map",
-    "main.e5bcd4d7.js.map": "/static/js/main.e5bcd4d7.js.map"
+    "main.9be71f26.js.map": "/static/js/main.9be71f26.js.map"
   },
   "entrypoints": [
     "static/css/main.cf2624d2.css",
-    "static/js/main.e5bcd4d7.js"
+    "static/js/main.9be71f26.js"
   ]
 }
