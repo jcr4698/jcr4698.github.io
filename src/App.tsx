@@ -22,6 +22,7 @@ import { SocialMedia } from './components/social_media';
 import galaxy_banner from './content/New_JWST_Dwarf_Galaxy_Banner.png';
 import project_hardware_manager from './content/Project_Hardware_Manager.png';
 import stallion_file_finder from './content/File_Finder_Example.png';
+import order_manager from './content/Order_Manager_Demo.png';
 import inline_testing from './content/Inline_Tests_Example.png';
 import dcxer from './content/DCXer_Example.png';
 import jan_auction from './content/Jan_Auction.png';
@@ -453,7 +454,7 @@ function App() {
 										[
 											JSON.stringify({
 												"title": "Hardware Checkout App",
-												"desc_brief": "Web Application",
+												"desc_brief": "Flask Web Application",
 												"visual": project_hardware_manager.toString(),
 												"links": [
 													{
@@ -481,6 +482,26 @@ function App() {
 													"Implementation of the Linux utility library, process system calls, and the GTK widget toolkit."
 												],
 												"github": "https://github.com/jcr4698/Stallion_File_Finder"
+											}),
+											JSON.stringify({
+												"title": "Order Manager App",
+												"desc_brief": "Spring Boot Web Application",
+												"visual": order_manager.toString(),
+												"links": [
+													{
+														"button": "try demo",
+														"url": "https://jcr4698-order-manager-app.netlify.app/demo"
+													},
+													{
+														"button": "visit website",
+														"url": "https://jcr4698-order-manager-app.netlify.app/orders"
+													}
+												],
+												"desc_bullets": [
+													"A web application that enables the documentation of secure order transactions using CRUD operations.",
+													"Assembled using ReactJS, HTML, CSS, Spring Boot, Spring Security, MongoDB/MySQL, and Docker."
+												],
+												"github": "https://github.com/jcr4698/Spring_Boot_Order_Manager"
 											}),
 											JSON.stringify({
 												"title": "Inline Testing",
